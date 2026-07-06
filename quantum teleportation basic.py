@@ -8,6 +8,8 @@ qc.cx(0,1)
 qc.h(0)
 qc.measure(0,0)
 qc.measure(1,1)
+print(qc.draw())
+qc.draw(output='mpl', filename='quantum teleportation circuit.png')
 with qc.if_test((qc.cregs[0],1)):
     qc.x(2)
 with qc.if_test((qc.cregs[0],2)):
